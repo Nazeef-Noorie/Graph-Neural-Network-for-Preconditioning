@@ -13,7 +13,7 @@ This approach is inspired by recent work in machine learning for scientific comp
 
 The GNN learns to generate preconditioners directly from the graph representation of a sparse Jacobian matrix. These learned preconditioners are used to enhance the convergence of iterative solvers, particularly BiCGSTAB, and in theory significantly reduce the computational cost of nucleosynthesis simulations.
 
-To read in depth about this development and architecture of this code, please refer to my [Thesis](https://drive.google.com/file/d/1GhBuXnq0-GyOspdUU-tTIyZMzdo9vmVa/view?usp=sharing)
+To read in depth about this development and the architecture of this code, please refer to my [Thesis](https://drive.google.com/file/d/1GhBuXnq0-GyOspdUU-tTIyZMzdo9vmVa/view?usp=sharing)
 
 ---
 
@@ -34,7 +34,6 @@ To test the GNN's capability, you modify the .ipynb to read the file with releva
 
 ## 📊 Results
 
-- Models trained using ILUT preconditioners generated via custom code and Intel MKL's `dcrilut`.
 - Achieves effective post-preconditioning behaviour.
 - Integration with iterative solvers significantly reduces residual norms and iteration counts.
 
